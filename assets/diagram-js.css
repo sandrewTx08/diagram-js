@@ -105,7 +105,7 @@
  */
 
 .djs-container svg:focus {
-  outline: none;
+  outline: none !important;
 }
 
 .djs-container svg.drop-not-ok {
