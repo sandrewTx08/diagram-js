@@ -104,10 +104,6 @@
  * SVG styles
  */
 
-.djs-container svg:focus {
-  outline: none !important;
-}
-
 .djs-container svg.drop-not-ok {
   background: var(--shape-drop-not-allowed-fill-color) !important;
 }
