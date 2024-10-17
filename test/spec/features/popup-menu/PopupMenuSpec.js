@@ -709,7 +709,7 @@ describe('features/popup-menu', function() {
 
     it('should call canvas focus on close', inject(function(popupMenu) {
 
-      //given
+      // given
       const canvasFocusSpy = sinon.spy();
       const mockCanvas = {
         focus: canvasFocusSpy
