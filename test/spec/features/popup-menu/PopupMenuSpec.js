@@ -706,6 +706,24 @@ describe('features/popup-menu', function() {
       }).not.to.throw();
     }));
 
+
+    it('should call canvas focus on close', inject(function(popupMenu) {
+
+      //given
+      const canvasFocusSpy = sinon.spy();
+      const mockCanvas = {
+        focus: canvasFocusSpy
+      };
+      popupMenu._canvas = mockCanvas;
+
+      // when
+      popupMenu.close();
+
+      // then
+      expect(canvasFocusSpy).to.have.been.calledOnce;
+
+    }));
+
   });
 
 
